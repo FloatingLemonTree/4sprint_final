@@ -105,7 +105,7 @@ func RunningSpentCalories(steps int, weight, height float64, duration time.Durat
 
 	avgSpeed := meanSpeed(steps, height, duration)
 	if avgSpeed <= 0 {
-		return 0, fmt.Errorf("средняя скорость не может быть меньше или равна нулю")
+		return 0, fmt.Errorf("скорость не может быть меньше или равна нулю")
 	}
 
 	durationInMinutes := duration.Minutes()
